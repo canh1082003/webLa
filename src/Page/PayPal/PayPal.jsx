@@ -17,7 +17,7 @@ function PayPal() {
     <div className="">
       <div className="grid grid-cols-12">
         <div className="col-span-4">
-          <div className="px-10 py-12 bg-mainColor-color_2D0000 h-screen text-mainColor-color_D9D9D9">
+          <div className="px-10 py-12 bg-mainColor-color_257866 text-white h-screen text-mainColor-color_D9D9D9">
             <h1 className="font-bold text-2xl pb-5">Thanh toán sản phẩm</h1>
 
             {useInfor && (
@@ -43,7 +43,7 @@ function PayPal() {
             )}
           </div>
         </div>
-        <div className="col-span-8  bg-mainColor-color_D9D9D9">
+        <div className="col-span-8  bg-white">
           <div className="mx-20 my-5 ">
             {items.slice(0, 8).map((item) => (
               <tr key={item.id} className="">

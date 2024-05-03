@@ -30,12 +30,8 @@ function Login() {
 
   return (
     <div className="grid grid-cols-2">
-      <div className="lg:col-span-1 col-span-2 w-full mb-10">
-        <form
-          className="mx-32 pt-[230px] text-white"
-          onSubmit={onSubmit}
-          noValidate
-        >
+      <div className="lg:col-span-1 col-span-2 w-full mb-10 pt-20">
+        <form className="mx-32  text-white" onSubmit={onSubmit} noValidate>
           <div className=" w-full relative flex justify-between items-center  ">
             <span className="text-3xl font-text  font-semibold capitalize ">
               Đăng nhập
@@ -79,7 +75,7 @@ function Login() {
 
           <button
             type="submit"
-            className="w-full border py-3 my-2 hover:bg-mainColor-color_D9D9D9 hover:text-mainColor-color_2D0000 uppercase"
+            className="w-full border py-3 my-2 hover:bg-mainColor-color_257866 uppercase"
           >
             đăng nhập
           </button>

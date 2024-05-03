@@ -3,7 +3,7 @@ import Input from "../../../Components/Input";
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 import { getRule } from "../../../util/rule";
-import Image from "../../../assets/ImageAuth.png";
+
 import { registerAccount } from "../../../Api/Api.auth";
 import { useState } from "react";
 
@@ -31,14 +31,10 @@ function Register() {
     });
   });
   return (
-    <div className="grid grid-cols-2">
-      <div className="lg:col-span-1 col-span-2 w-full mb-10">
-        <form
-          className="mx-32 pt-[230px] text-mainColor-color_D9D9D9"
-          onSubmit={onSubmit}
-          noValidate
-        >
-          <div className=" w-full relative flex justify-between items-center  ">
+    <div className="mx-64">
+      <div className=" w-full mb-10">
+        <form className="mx-32 pt-10" onSubmit={onSubmit} noValidate>
+          <div className=" w-full relative flex justify-between items-center text-white ">
             <span className="text-3xl font-text  font-semibold capitalize ">
               Đăng ký
             </span>
@@ -106,7 +102,7 @@ function Register() {
             </div>
           </div>
 
-          <button className="w-full border py-3 my-2 hover:bg-mainColor-color_D9D9D9 hover:text-mainColor-color_2D0000 uppercase">
+          <button className="w-full border py-3 my-2 hover:bg-mainColor-color_257866 uppercase">
             đăng ký
           </button>
         </form>

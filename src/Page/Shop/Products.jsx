@@ -42,7 +42,7 @@ function Products() {
                     category: Category.id,
                   }).toString(),
                 }}
-                className={` border rounded-full px-6 py-3 hover:text-mainColor-color_2D0000 hover:bg-mainColor-color_D9D9D9 ${isActive ? "bg-mainColor-color_D9D9D9 text-mainColor-color_2D0000" : "text-mainColor-color_D9D9D9"}`}
+                className={` border rounded-full px-6 py-3 hover:text-mainColor-color_2D0000 hover:bg-mainColor-color_257866 hover:border-mainColor-color_257866 ${isActive ? "bg-white text-mainColor-color_2D0000" : "text-mainColor-color_D9D9D9"}`}
                 onClick={() => handleCategoryClick(Category.id)}
                 key={Category.id}
               >
@@ -50,7 +50,6 @@ function Products() {
               </Link>
             );
           })}
-        ;
       </div>
       <div className="grid grid-cols-4 mx-32">
         <div className=" col-span-4  bg-opacity-50">
@@ -65,7 +64,7 @@ function Products() {
                       className="col-span-1 hover:scale-95 "
                     >
                       <Link to={`/${product.id}`}>
-                        <div className="bg-mainColor-color_D9D9D9 flex-grow">
+                        <div className="bg-white text-mainColor-color_257866 flex-grow">
                           <div className="w-full  pt-[100%] relative  ">
                             <img
                               src={product.imgUrl}
@@ -82,9 +81,6 @@ function Products() {
                                 <span className="text-sm">
                                   {formatPrice(product.price * 1)}
                                 </span>
-                              </div>
-                              <div className="text-mainColor-color_2D0000 font-medium text-[13px]">
-                                chi tiết sản phẩm
                               </div>
                             </div>
                           </div>

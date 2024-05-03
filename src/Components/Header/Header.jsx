@@ -53,7 +53,7 @@ function Header() {
               <input
                 type="text"
                 placeholder="Tìm kiếm pizza"
-                className=" py-2 text-white bg-mainColor-color_D9D9D9 text-black rounded-full px-3 outline-none"
+                className=" py-2 bg-mainColor-color_D9D9D9 text-black rounded-full px-3 outline-none"
               />
             </div>
 

@@ -30,7 +30,7 @@ function CartHeader() {
       {showPopover && (
         <div className="absolute grid grid-cols-3  top-0 right-0 w-screen h-screen">
           <div className="col-span-2 bg-black bg-opacity-80"></div>
-          <div className="col-span-1 bg-mainColor-color_D9D9D9  py-7 px-5 ">
+          <div className="col-span-1 bg-white text-black  py-7 px-5 ">
             <div className=" flex justify-between ">
               <div className="text-mainColor-color_2D0000 mb-5 font-bold text-2xl">
                 Cart
@@ -111,13 +111,13 @@ function CartHeader() {
               </tr>
             ))}
             {!isEmpty && (
-              <div className="flex justify-between mt-8">
-                <div className="text-mainColor-color_2D0000 px-3 py-5  text-center  text-lg">
+              <div className="flex justify-between items-center mt-8">
+                <div className="text-mainColor-color_2D0000   text-center  text-lg">
                   Tổng sản phẩm : {formatPrice(cartTotal)}
                 </div>
                 <Link
                   to={"/pay"}
-                  className="bg-mainColor-color_2D0000 px-6 py-5 text-center hover:bg-mainColor-color_01042D  cursor-pointer"
+                  className="bg-mainColor-color_phu  px-6 py-5 text-center text-white hover:bg-mainColor-color_257866  cursor-pointer"
                 >
                   mua ngay
                 </Link>

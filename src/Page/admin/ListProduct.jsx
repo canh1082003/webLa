@@ -206,12 +206,12 @@ export default function ListProduct() {
                 }
                 encType="multipart/form-data"
               >
-                <h3 className="font-bold text-2xl text-center mb-2 uppercase">
+                <h3 className="font-bold text-2xl text-center mb-2 uppercase text-blue-700">
                   Update User
                 </h3>
 
                 <div>
-                  <p className="font-bold">Name</p>
+                  <p className="font-bold text-blue-700">Name</p>
                   <input
                     type="text"
                     name="name"
@@ -219,7 +219,7 @@ export default function ListProduct() {
                     onChange={handleChange}
                     className="w-[700px] border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
                   />
-                  <p className="font-bold">Price</p>
+                  <p className="font-bold text-blue-700">Price</p>
                   <input
                     type="text"
                     name="price"
@@ -227,7 +227,7 @@ export default function ListProduct() {
                     onChange={handleChange}
                     className="w-[700px] border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
                   />
-                  <p className="font-bold">CategoryId</p>
+                  <p className="font-bold text-blue-700">CategoryId</p>
                   <input
                     type="text"
                     name="categoryId"
@@ -254,20 +254,20 @@ export default function ListProduct() {
   const renderTitleProducts = () => {
     return (
       <div className="font-bold text-2xl">
-        <div className="flex bg-mainColor-color_D9D9D9 text-mainColor-color_2D0000 p-5 ">
+        <div className="flex bg-white text-black  p-5">
           <p className="flex-1 text-center">Image</p>
           <p className="flex-1 text-center">Name</p>
           <p className="flex-1 text-center">Price</p>
-          <p className="flex-1 text-center">categoryId</p>
+          <p className="flex-1 text-center">Category</p>
           <p className="flex-1 text-center">Actions</p>
         </div>
         {products?.map((product) => (
-          <div className="flex p-6  bg-mainColor-color_767586 hover:bg-mainColor-color_01042D text-mainColor-color_D9D9D9">
-            <div className="flex-1 text-center  ">
+          <div className="flex p-6 bg-gray-300 hover:bg-gray-500 text-amber-950">
+            <div className="flex-1 text-center">
               <img
                 src={product?.imgUrl}
                 alt={product?.name}
-                className="top-0 left-0 w-full h-full"
+                className="w-full h-full"
               />
             </div>
             <p className="flex-1 text-center my-auto">{product?.name}</p>
@@ -277,13 +277,13 @@ export default function ListProduct() {
             <p className="flex-1 text-center my-auto">{product?.categoryId}</p>
             <div className="flex-1 text-center my-auto">
               <button
-                className="flex-1 text-white bg-blue-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg  px-5 py-2.5   mr-3"
+                className="bg-orange-600 hover:bg-orange-950 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5 mr-3"
                 onClick={() => handleOpenModalUpdate(product)}
               >
                 Edit
               </button>
               <button
-                className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg  px-5 py-2.5 text-center "
+                className="bg-orange-600 hover:bg-orange-950 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5"
                 onClick={() => handleDelete(product?.id)}
               >
                 Delete
